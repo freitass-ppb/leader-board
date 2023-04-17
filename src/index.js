@@ -1,8 +1,7 @@
-function getNumberOfDollsAvailable(parts) {
+function orderLeaderBoard(teams) {
     // YOUR CODE HERE
-
 }
 
 module.exports = {
-    getNumberOfDollsAvailable,
+    orderLeaderBoard,
 };

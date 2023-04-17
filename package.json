@@ -1,7 +1,7 @@
 {
-  "name": "seasons-score-board",
+  "name": "leader-board",
   "version": "1.0.0",
-  "description": "Seasons Score Board",
+  "description": "Leader Board",
   "scripts": {
     "test": "node test.js",
     "test:watch": "chokidar \"**/*.js\" -c \"npm test\" --silent --initial --ignore node_modules"
