@@ -1,0 +1,16 @@
+{
+  "name": "seasons-score-board",
+  "version": "1.0.0",
+  "description": "Seasons Score Board",
+  "scripts": {
+    "test": "node test.js",
+    "test:watch": "chokidar \"**/*.js\" -c \"npm test\" --silent --initial --ignore node_modules"
+  },
+  "devDependencies": {
+    "chokidar-cli": "2.1.0",
+    "jasmine": "^3.5.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "jasmine-reporters": "^2.3.2"
+  },
+  "dependencies": {}
+}
