@@ -2,10 +2,10 @@ const Jasmine = require('jasmine');
 const reporters = require('jasmine-reporters');
 const jasmine = new Jasmine();
 
-var junitReporter = new reporters.JUnitXmlReporter({
+const junitReporter = new reporters.JUnitXmlReporter({
     savePath: __dirname,
     consolidateAll: true,
-    filePrefix: "test-results"
+    filePrefix: "test-results",
 });
 jasmine.env.addReporter(junitReporter);
 
@@ -19,7 +19,7 @@ const consoleReporter = new JasmineConsoleReporter({
     timeThreshold: { ok: 500, warn: 1000, ouch: 3000 },
     activity: false,
     emoji: false,
-    beep: false
+    beep: false,
 });
 jasmine.env.addReporter(consoleReporter);
 
@@ -29,9 +29,9 @@ jasmine.loadConfig({
   // helpers: ['helpers/**/*.js'],
   random: false,
   seed: null,
-  stopSpecOnExpectationFailure: false
+  stopSpecOnExpectationFailure: false,
 });
 
-console.log(`Using Jasmine version: ${jasmine.jasmine.version}`)
+console.log(`Using Jasmine version: ${jasmine.jasmine.version}`);
 
 jasmine.execute();

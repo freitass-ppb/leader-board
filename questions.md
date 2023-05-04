@@ -3,30 +3,31 @@
 `1 - JavaScript` What do you think it will be printed into the console?
 
 ```javascript
-const a = 2;
-const b = "2";
-
-if (a == b) {
-    console.log("Option 1");
-} else if (a === b) {
-    console.log("Option 2");
-} else {
-    console.log("Option 3")
+const isEqual = (a, b) => {
+    if (a === b) {
+        return "Option 1";
+    } else if (a == b) {
+        return "Option 2";
+    } else {
+        return "Option 3";
+    }
 }
 
-- [ ] Option 1
-- [ ] Option 2
-- [ ] Option 3
-- [ ] Nothing will be printed
+console.log(isEqual(2, "2"), isEqual("" + 2, "2"));
 ```
+
+- [ ] `Option 1 Option 2`
+- [x] `Option 2 Option 1`
+- [ ] `Option 3 Option 1`
+- [ ] `Option 2 Option 3`
 
 ---
 
-`2 - JavaScript` What’s the difference between synchronous and asynchronous functions (select the correct responses)?  
-    - [ ] Both types block the execution of the code until it completes its execution  
-    - [ ] Asynchronous functions run in background letting the code to continue its execution  
-    - [ ] Both types don’t block the execution of the code until it completes its execution  
-    - [ ] Synchronous functions block the code from executing until the function has completed its task  
+`2 - JavaScript` What's the difference between synchronous and asynchronous functions (select the correct responses)?
+- [ ] Both types block the execution of the code until it completes its execution
+- [x] Asynchronous functions run in background letting the code to continue its execution
+- [ ] Both types don’t block the execution of the code until it completes its execution
+- [x] Synchronous functions block the code from executing until the function has completed its task
 
 ---
 
@@ -38,13 +39,12 @@ const b = a;
 
 b.push(4);
 
-console.log(a);
-console.log(b);
+console.log(a, b);
 ```
 
-- [ ] [1, 2, 3], [1, 2, 3, 4]
-- [X] [1, 2, 3, 4], [1, 2, 3, 4]
-- [ ] [1, 2, 3, 4], [1, 2, 3]
+- [ ] `[1, 2, 3] [1, 2, 3, 4]`
+- [X] `[1, 2, 3, 4] [1, 2, 3, 4]`
+- [ ] `[1, 2, 3, 4] [1, 2, 3]`
 - [ ] Error
 
 ---
@@ -57,19 +57,59 @@ const b = [...a];
 
 b.push(4);
 
-console.log(a);
-console.log(b);
+console.log(a, b);
 ```
 
-- [X] [1, 2, 3], [1, 2, 3, 4]
-- [ ] [1, 2, 3, 4], [1, 2, 3, 4]
-- [ ] [1, 2, 3, 4], [1, 2, 3]
+- [X] `[1, 2, 3] [1, 2, 3, 4]`
+- [ ] `[1, 2, 3, 4] [1, 2, 3, 4]`
+- [ ] `[1, 2, 3, 4] [1, 2, 3]`
 - [ ] Error
 
 ---
 
-`5 - JavaScript` Programming question
-    - See the code
+`5 - HTML` Which of the following tags is used to define a hyperlink in HTML?
+- [ ] `<div>`
+- [ ] `<url>`
+- [x] `<a>`
+- [ ] `<span>`
+
+---
+
+`6 - HTML` Which tag is used to define an image in HTML?
+- [x] `<img>`
+- [ ] `<link>`
+- [ ] `<image>`
+- [ ] `<meta>`
+
+---
+
+`7 - CSS` Which of the following is not a valid value for the `display` property in CSS?
+- [ ] `block`
+- [ ] `inline`
+- [ ] `revert`
+- [x] `visible`
+
+---
+
+`8 - HTML` Which HTML tag is used to define a paragraph?
+- [x] `<p>`
+- [ ] `<div>`
+- [ ] `<span>`
+- [ ] `<h1>`
+
+---
+
+`9 - HTML` Which of these statements is true?
+- [x] `display: none` hides the element and takes no space
+- [ ] `visibility: hidden` is not visible and takes no space
+- [ ] `display: none` hides the element and maintains its space
+- [ ] `visibility: hidden` is not visible and is removed from the DOM
+
+---
+
+`10 - JavaScript` Programming question
+
+- See the code
 
 ---
 

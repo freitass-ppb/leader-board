@@ -1,4 +1,3 @@
-
 const { orderLeaderBoard } = require("../src/index");
 
 describe("orderLeaderBoard test", () => {
@@ -14,9 +13,9 @@ describe("orderLeaderBoard test", () => {
         it("should return an error if the input is a list with less than 3 teams", () => {
             const teams = [
                 { name: 'Team A', wins: 1, draws: 0, losses: 0 },
-                { name: 'Team B', wins: 0, draws: 0, losses: 1 }
+                { name: 'Team B', wins: 0, draws: 0, losses: 1 },
             ];
-            
+
             expect(() => orderLeaderBoard(teams)).toThrow(new Error('Unable to create the leader board'));
         });
     });
@@ -27,12 +26,12 @@ describe("orderLeaderBoard test", () => {
                 const teams = [
                     { name: 'Team A', wins: 0, draws: 0, losses: 0 },
                     { name: 'Team B', wins: 0, draws: 0, losses: 0 },
-                    { name: 'Team C', wins: 0, draws: 0, losses: 0 }
+                    { name: 'Team C', wins: 0, draws: 0, losses: 0 },
                 ];
-                
+
                 expect(orderLeaderBoard(teams)).toEqual(teams);
             });
-        })
+        });
 
         describe("with multiple teams with non 0 points", () => {
             it("should return the ordered list", () => {
@@ -43,10 +42,11 @@ describe("orderLeaderBoard test", () => {
                     { name: 'Team A', wins: 4, draws: 0, losses: 0 },
                     { name: 'Team C', wins: 0, draws: 0, losses: 4 },
                 ];
-                
-                expect(orderLeaderBoard(teams).replace(/ |\n*/g, '')).toEqual(`🥇TeamA-12points🥈TeamE-5points🥉TeamB-4points`);
+
+                expect(orderLeaderBoard(teams))
+                  .toEqual('1st Team A - 12 points\n2nd Team E - 5 points\n3rd Team B - 4 points');
             });
-        })
+        });
 
         describe("with few teams with non 0 points", () => {
             it("should return the ordered list", () => {
@@ -55,11 +55,10 @@ describe("orderLeaderBoard test", () => {
                     { name: 'Team A', wins: 1, draws: 0, losses: 1 },
                     { name: 'Team B', wins: 2, draws: 0, losses: 0 },
                 ];
-                
-                const expectedOutput = `🥇TeamB-6points🥈TeamA-3points🥉TeamC-0points`;
-                
-                expect(orderLeaderBoard(teams).replace(/ |\n*/g, '')).toEqual(expectedOutput);
+
+                expect(orderLeaderBoard(teams))
+                  .toEqual('1st Team B - 6 points\n2nd Team A - 3 points\n3rd Team C - 0 points');
             });
-        })
+        });
     });
 });
