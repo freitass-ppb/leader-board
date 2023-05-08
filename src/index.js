@@ -27,10 +27,6 @@ function orderLeaderBoard(teams) {
         LOSS: 0,
     };
 
-    if (!teams || teams.length < 3) {
-        throw new Error ('Unable to create the leader board');
-    }
-
     const leaderBoard = teams.map((team) => {
         const updatedTeam = {
             ...team,

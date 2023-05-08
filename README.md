@@ -11,13 +11,13 @@ The function `orderLeaderBoard` receives a `teams` input list and returns a stri
 
 ## Requirements
 
-* If the function input is `undefined`, `null` or a list with less than 3 teams, an error should be thrown with the message "Unable to create the leader board"
+* If the function input is `undefined`, `null` or a list with less than 3 teams, an error should be thrown with the message `Unable to create the leader board`
 * If all the teams have 0 points, it should return the initial input
 * Each team should have a property called `points`, which is calculated assuming:
   * `victory` is worth 3 points
   * `draw` is worth 1 point
   * `loss` is worth 0 points
-* Indicate the top 3 teams ordered by points decreasing
+* Indicate the top 3 teams ordered by descending points
 * Ignore the cases where there are tied teams
 
 Assume this `teams` structure as the input of the `orderLeaderBoard` function:
@@ -34,8 +34,7 @@ const teams = [
 
 ## Your Goal
 
-Don't worry, we already wrote some of the code for you, but there's something wrong,
-since there are 2 unit tests failing.
+Don't worry, we already wrote some of the code for you, but there's something wrong, since there are some unit tests failing.
 
 We need your help to fix the code and make all the unit tests pass.
 
