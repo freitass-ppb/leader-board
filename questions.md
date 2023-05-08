@@ -23,7 +23,7 @@ console.log(isEqual(2, "2"), isEqual("" + 2, "2"));
 
 ---
 
-`2 - JavaScript` What's the difference between synchronous and asynchronous functions (select the correct responses)?
+`2 - JavaScript` Select the correct statements about synchronous and asynchronous functions?
 - [ ] Both types block the execution of the code until it completes its execution
 - [x] Asynchronous functions run in background letting the code to continue its execution
 - [ ] Both types don’t block the execution of the code until it completes its execution
@@ -67,23 +67,7 @@ console.log(a, b);
 
 ---
 
-`5 - HTML` Which of the following tags is used to define a hyperlink in HTML?
-- [ ] `<div>`
-- [ ] `<url>`
-- [x] `<a>`
-- [ ] `<span>`
-
----
-
-`6 - HTML` Which tag is used to define an image in HTML?
-- [x] `<img>`
-- [ ] `<link>`
-- [ ] `<image>`
-- [ ] `<meta>`
-
----
-
-`7 - CSS` Which of the following is not a valid value for the `display` property in CSS?
+`5 - CSS` Which of the following is not a valid value for the `display` property in CSS?
 - [ ] `block`
 - [ ] `inline`
 - [ ] `revert`
@@ -91,7 +75,7 @@ console.log(a, b);
 
 ---
 
-`8 - HTML` Which HTML tag is used to define a paragraph?
+`6 - HTML` Which HTML tag is used to define a paragraph?
 - [x] `<p>`
 - [ ] `<div>`
 - [ ] `<span>`
@@ -99,7 +83,7 @@ console.log(a, b);
 
 ---
 
-`9 - HTML` Which of these statements is true?
+`7 - HTML` Which of these statements is true?
 - [x] `display: none` hides the element and takes no space
 - [ ] `visibility: hidden` is not visible and takes no space
 - [ ] `display: none` hides the element and maintains its space
@@ -107,7 +91,7 @@ console.log(a, b);
 
 ---
 
-`10 - JavaScript` Programming question
+`8 - JavaScript` Programming question
 
 - See the code
 
